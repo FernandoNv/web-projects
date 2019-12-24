@@ -12,8 +12,8 @@
     </div>
     <div class="container">
         <header class="header">
-            <h1 class="title">FIFA championship Survey Form</h1>
-            <p class="description">Come to play, meet other players, and have fun with this amazing competition. We are going to have a party after the game.</p>
+            <h1 class="title" id="title">FIFA championship Survey Form</h1>
+            <p class="description" id="description">Come to play, meet other players, and have fun with this amazing competition. We are going to have a party after the game.</p>
         </header>
 
         <form id="survey-form">
@@ -27,7 +27,7 @@
             </div>
             <div class="item-form">
                 <label for="number" id="number-label">Age: </label>
-                <input type="number" min="7" max="50" name="age" id="number" placeholder="age" class="input" required> 
+                <input type="number" min="7" max="50" name="age" id="number" placeholder="age" class="input"> 
             </div>
             <div class="item-form">
                 <p class="item-description">How did you hear about this event?</p>
@@ -43,19 +43,19 @@
 
                 <div class="item-group">
                     <div>
-                        <input type="radio" id="playstation" name="console" class="input-radio">
+                        <input type="radio" id="playstation" value="playstation" name="console" class="input-radio">
                         <label for="playstation">PlayStation 4</label>
                     </div>
                     <div>
-                        <input type="radio" id="xbox" name="console" class="input-radio">
+                        <input type="radio" id="xbox" value="xbox" name="console" class="input-radio">
                         <label for="xbox">Xbox One</label>
                     </div>
                     <div>
-                        <input type="radio" id="nintendo" name="console" class="input-radio">
+                        <input type="radio" id="nintendo" value="nintendo" name="console" class="input-radio">
                         <label for="nintendo">Nintendo Switch</label>
                     </div>
                     <div>
-                        <input type="radio" id="pc" name="console" class="input-radio">
+                        <input type="radio" id="pc" name="console" value="pc" class="input-radio">
                         <label for="pc">PC (Origin)</label>
                     </div>
                 </div>
@@ -64,32 +64,32 @@
                 <p class="item-description">Other games you would like to play next time</p>
                 <div class="item-group">
                     <div>
-                        <input type="checkbox" id="gta" class="input-checkbox">
+                        <input type="checkbox" id="gta" class="input-checkbox" value="gta">
                         <label for="gta">GTA V</label>
                     </div>
 
                     <div>
-                        <input type="checkbox" id="nba" class="input-checkbox">
+                        <input type="checkbox" id="nba" class="input-checkbox" value="nba">
                         <label for="nba">NBA 2K</label>
                     </div>
 
                     <div>
-                        <input type="checkbox" id="mk" class="input-checkbox">
+                        <input type="checkbox" id="mk" class="input-checkbox" value="mk">
                         <label for="mk">Mortal Kombat</label>
                     </div>
 
                     <div>
-                        <input type="checkbox" id="marvel-capcom" class="input-checkbox">
+                        <input type="checkbox" id="marvel-capcom" class="input-checkbox" value="marvel-capcom">
                         <label for="marvel-capcom">Marvel vs Capcom</label>
                     </div>
 
                     <div>
-                        <input type="checkbox" id="need" class="input-checkbox">
+                        <input type="checkbox" id="need" class="input-checkbox" value="need">
                         <label for="need" class="input-checkbox">Need for Speed</label>
                     </div>
 
                     <div>
-                        <input type="checkbox" id="mario" class="input-checkbox">
+                        <input type="checkbox" id="mario" class="input-checkbox" value="mario">
                         <label for="mario" class="input-checkbox">Mario Kart</label>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                 <p class="item-description">Any comments or suggestions?</p>
                 <textarea id="comments" class="input textarea"></textarea>
             </div>
-            <input type="submit" class="btn-submit">
+            <input type="submit" class="btn-submit" id="submit">
         </form>
     </div>
     <footer class="footer wave wave-footer">
