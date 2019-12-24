@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #4F4F4F;
+    background-color: #F4F4F4;
+}
+
+#title{
+    font-size: 4em;
+    text-align: center;
+    color: #3D5257;
+    padding: 30px;
+    font-weight: bold;
+}
+
+hr{
+    border: 3px solid #455A64;
+}
+
+h2{
+    font-size: 2.5em;
+    text-align: center;
+    padding: 30px;
+    font-weight: normal;
+}
+
+#img-div{
+    background-color: #3D5257;
+    padding: 30px 0;
+}
+
+figure{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+#img-div img{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+figure figcaption{
+    font-size: 1.6em;
+    color: #F4F4F4;
+    text-align: center;
+    font-weight: normal;
+}
+
+#tribute-info{
+    font-size: 2.3em;
+    font-weight: bold;
+    color:#3D5257;
+    text-align: center;
+    padding: 30px 0;    
+}
+
+.content-p, h3{
+    font-size: 2em;
+    text-align: justify;
+    line-height: 1.8em;
+    letter-spacing: 0.015em;
+    padding: 0 30px;
+}
+
+ul{
+    max-width: 500px;
+    margin: auto;
+    padding: 0 60px;
+}
+
+li{
+    font-size: 2em;
+    padding: 15px 0;
+    
+}
+
+#tribute-link{
+    color: #3D5257;
+    text-decoration-style: dashed;
+    transition: 0.7s;
+}
+
+#tribute-link:hover{
+    transform: scale(2);
+    color: rgb(103, 133, 148);
+}
+
+footer{
+    background-color: #283639;
+    padding: 30px;
+}
+
+footer p{
+    color: #F4F4F4;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+@media (min-width: 800px){
+    .content-p, h3{
+        padding: 0px 80px;
+    }
+
+    figure{
+        width: 30%;
+    }
+}

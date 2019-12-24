@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form | Games</title>
+</head>
+<body>
+    <div class="wave wave-top">
+                  
+    </div>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">FIFA championship Survey Form</h1>
+            <p class="description">Come to play, meet other players, and have fun with this amazing competition. We are going to have a party after the game.</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="item-form">
+                <label for="name" id="name-label">Name: </label>
+                <input type="text" name="name" id="name" placeholder="type your name" class="input" required>
+            </div>
+            <div class="item-form">
+                <label for="email" id="email-label">Email: </label>
+                <input type="email" name="email" id="email" placeholder="exemple@email.com" class="input" required>
+            </div>
+            <div class="item-form">
+                <label for="number" id="number-label">Age: </label>
+                <input type="number" min="7" max="50" name="age" id="number" placeholder="age" class="input" required> 
+            </div>
+            <div class="item-form">
+                <p class="item-description">How did you hear about this event?</p>
+                <select id="dropdown" class="input">
+                    <option disabled selected value>Select current option</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="item-form">
+                <p class="item-description">What is your favourite console</p>
+
+                <div class="item-group">
+                    <div>
+                        <input type="radio" id="playstation" name="console" class="input-radio">
+                        <label for="playstation">PlayStation 4</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="xbox" name="console" class="input-radio">
+                        <label for="xbox">Xbox One</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="nintendo" name="console" class="input-radio">
+                        <label for="nintendo">Nintendo Switch</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pc" name="console" class="input-radio">
+                        <label for="pc">PC (Origin)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="item-form">
+                <p class="item-description">Other games you would like to play next time</p>
+                <div class="item-group">
+                    <div>
+                        <input type="checkbox" id="gta" class="input-checkbox">
+                        <label for="gta">GTA V</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="nba" class="input-checkbox">
+                        <label for="nba">NBA 2K</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="mk" class="input-checkbox">
+                        <label for="mk">Mortal Kombat</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="marvel-capcom" class="input-checkbox">
+                        <label for="marvel-capcom">Marvel vs Capcom</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="need" class="input-checkbox">
+                        <label for="need" class="input-checkbox">Need for Speed</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="mario" class="input-checkbox">
+                        <label for="mario" class="input-checkbox">Mario Kart</label>
+                    </div>
+                </div>
+            </div>
+            <div class="item-form">
+                <p class="item-description">Any comments or suggestions?</p>
+                <textarea id="comments" class="input textarea"></textarea>
+            </div>
+            <input type="submit" class="btn-submit">
+        </form>
+    </div>
+    <footer class="footer wave wave-footer">
+        <p>Fernando©</p>                
+    </footer>
+</body>
+</html>
