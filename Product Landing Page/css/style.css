@@ -52,12 +52,16 @@ body{
     z-index: 1;
 }
 
+.position-relative{
+    position: relative;
+}
+
 .margin-top-fixed{
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .header{
-    height: 150px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,6 +69,10 @@ body{
 
 .logo-img{
     max-width: 90px;
+}
+
+.header .logo-img{
+    padding: 0.5rem;
 }
 
 .nav-bar-header ul{
@@ -88,9 +96,6 @@ body{
     text-decoration: underline;
 }
 
-.banner-area{
-    position: relative;
-}
 
 .title,
 .description{
@@ -104,14 +109,17 @@ body{
 .description{
     font-size: 2rem;
 }
-
+.banner-area a{
+    text-decoration: none;
+}
 .bt-primary{
     background-color: var(--orange-color);
-    color: #fff;
+    color: #ffffff;
     border: none;
     padding: 12px 32px;
     display: block;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .green-shoe{
@@ -138,4 +146,79 @@ body{
     .description{
         font-size: 1.8rem;
     }
+}
+
+.display-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.features-area{
+    margin-top: 3rem;
+}
+
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+}
+
+.circle1{
+    top: 80%;
+    left: 15%;
+    background-color: rgba(30, 214, 85, 0.6);
+}
+
+.circle2,
+.circle3{
+    height: 50px;
+    width: 50px;
+    background-color: rgba(21, 237, 171, 0.6);;
+}
+
+.circle2{
+    top: 75%;
+    left: 40%;
+}
+
+.circle3{
+    top: 18%;
+    left: 70%;
+}
+
+
+.sub-title,
+.description-text,
+.p-text{
+    padding: 1rem 0;
+}
+
+.sub-title{
+    font-size: 2rem;
+    color: var(--green-color);
+    font-weight: 700;
+}
+
+.description-text{
+    font-size: 1.7rem;
+    font-weight: normal;
+}
+
+.p-text{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.signup-area .sub-title{
+    color:var(--text-dark-color);
+    text-align: center;
+}
+
+
+.video-area video{
+    max-width: 100%;
+    display: block;
 }
