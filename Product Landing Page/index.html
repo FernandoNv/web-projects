@@ -3,88 +3,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
     <title>Green Shoes | Product Landing Page</title>
 </head>
 <body>
-    <header class="header container" id="header">
-        <img src="img/logo-green-shoe.png" id="header-img" alt="Green Shoes Logo" class="logo">
-        <nav class="menu" id="nav-bar">
-            <ul>
-                <li><a href="#features" class="nav-link">Features</a></li>
-                <li><a href="#design" class="nav-link">Design</a></li>
-                <li><a href="#pricing" class="nav-link">Pricing</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="banner-area container">
-        <h1 class="title">Ipsam placeat, cupiditate quams</h1>
-        <h2 class="description">Lorem ipsum, dolor sit amet </h2>
-        <button class="bt-primary">LEARN MORE</button>
+    <div class="white-background position-fixed">
+        <header class="header" id="header">
+            <object data="./img/logo-green-shoe.svg" type="image/svg+xml" id="header-img" alt="Green Shoes Logo" class="logo-img"></object>
+            <nav class="nav-bar-header" id="nav-bar">
+                <ul>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#design" class="nav-link">Design</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                </ul>
+            </nav>
+        </header>
     </div>
-    <div class="features-area container" id="features">
-        <h2 class="sub-title">Features</h2>
-        <h3 class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h3>
-        <p class="p-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-    </div>
-    <div class="signup-area container">
-        <h2 class="sub-title">Sign Up</h2>
-        <form action="https://www.freecodecamp.com/email-submit" id="form">
-            <input type="email" id="email" placeholder="type your email" required>
-            <input type="submit" value="GET STARTED" id="submit">
-        </form>
-    </div>
-    <div class="design-area container" id="design">
-        <h2 class="sub-title">Design</h2>
-        <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        <section class="video-area">
-            <video controls>
-                <source src="video/green-shoes.mp4" type="video/mp4">
-                Sorry, your browser doesn't support embedded videos.
-            </video>
-        </section>
-    </div>
-    <div class="pricing-area container" id="pricing">
-        <h2 class="sub-title">Pricing</h2>
-        <div class="card">
-            <h3 class="title-card">Lorem ipsum</h3>
-            <span class="price-area">$50</span>
-            <ul class="card-list">
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum ipsum</li>
-                <li>Lorem ipsum</li>
-            </ul>
-        </div>
-
-        <div class="card primary-card">
-            <h3 class="title-card">Lorem ipsum</h3>
-            <span class="price-area">$100</span>
-            <ul class="card-list">
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum ipsum</li>
-                <li>Lorem ipsum</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h3 class="title-card">Lorem ipsum</h3>
-            <span class="price-area">$150</span>
-            <ul class="card-list">
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum ipsum</li>
-                <li>Lorem ipsum</li>
-            </ul>
+    <div class="green-background">
+        <div class="banner-area container">
+            <h1 class="title">Ipsam placeat, cupiditate quams</h1>
+            <h2 class="description">Lorem ipsum, dolor sit amet </h2>
+            <button class="bt-primary">LEARN MORE</button>
         </div>
     </div>
-    <footer class="footer container">
-        <img src="img/logo-green-shoe.png" alt="Green Shoes Logo" class="logo">
-        <nav class="menu menu-footer">
-            <ul>
-                <li><a href="#" class="nav-link">Features</a></li>
-                <li><a href="#" class="nav-link">Design</a></li>
-                <li><a href="#" class="nav-link">Pricing</a></li>
-            </ul>
-        </nav>
-        <span class="copyright">Fernando©</span>
-    </footer>
+    <div class="white-background">
+        <div class="features-area container" id="features">
+            <h2 class="sub-title">Features</h2>
+            <h3 class="description-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h3>
+            <p class="p-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <div class="circle green-circle"></div>
+            <div class="circle blue-circle"></div>
+            <div class="circle blue-circle"></div>
+        </div>
+    </div>
+    <div class="light-blue-background">
+        <div class="signup-area container">
+            <h2 class="sub-title">Sign Up</h2>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input type="email" id="email" placeholder="type your email" required>
+                <input type="submit" value="GET STARTED" id="submit">
+            </form>
+        </div>
+    </div>
+    <div class="dark-blue-background">
+        <div class="design-area container" id="design">
+            <h2 class="sub-title">Design</h2>
+            <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <section class="video-area">
+                <video controls>
+                    <source src="video/green-shoes.mp4" type="video/mp4">
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+            </section>
+        </div>
+    </div>
+    <div class="white-background">
+        <div class="pricing-area container" id="pricing">
+            <h2 class="sub-title">Pricing</h2>
+            <div class="card">
+                <h3 class="title-card">Lorem ipsum</h3>
+                <span class="price-area">$50</span>
+                <ul class="card-list">
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum ipsum</li>
+                    <li>Lorem ipsum</li>
+                </ul>
+            </div>
+    
+            <div class="card primary-card">
+                <h3 class="title-card">Lorem ipsum</h3>
+                <span class="price-area">$100</span>
+                <ul class="card-list">
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum ipsum</li>
+                    <li>Lorem ipsum</li>
+                </ul>
+            </div>
+    
+            <div class="card">
+                <h3 class="title-card">Lorem ipsum</h3>
+                <span class="price-area">$150</span>
+                <ul class="card-list">
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum ipsum</li>
+                    <li>Lorem ipsum</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="dark-background">
+        <footer class="footer">
+            <img src="img/logo-green-shoe.png" alt="Green Shoes Logo" class="logo">
+            <nav class="menu menu-footer">
+                <ul>
+                    <li><a href="#" class="nav-link">Features</a></li>
+                    <li><a href="#" class="nav-link">Design</a></li>
+                    <li><a href="#" class="nav-link">Pricing</a></li>
+                </ul>
+            </nav>
+            <span class="copyright">Fernando©</span>
+        </footer>
+    </div>
 </body>
 </html>
