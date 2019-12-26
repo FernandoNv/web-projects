@@ -57,14 +57,15 @@ body{
 }
 
 .margin-top-fixed{
-    margin-top: 100px;
+    margin-top: 170px;
 }
 
 .header{
-    height: 100px;
+    height: 170px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .green-bottom-border{
@@ -72,8 +73,8 @@ body{
 }
 
 .logo-img{
-    max-width: 90px;
-    max-height: 90px;
+    max-width: 80px;
+    max-height: 80px;
     padding: 0.5rem;
     cursor: pointer;
 }
@@ -84,14 +85,14 @@ body{
 
 .nav-bar-header li{
     display: inline;
+    padding: 0 0.2rem;
 }
 
 .nav-bar-header a{
-    padding: 0 1rem;
     color: var(--link-color);
     transition: 0.5s;
     text-decoration-color: transparent;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .nav-bar-header a:hover{
@@ -102,15 +103,16 @@ body{
 
 .title,
 .description{
-    padding: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
 }
 
 .title{
-    font-size: 4.5rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 .description{
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 .banner-area a{
     text-decoration: none;
@@ -119,16 +121,16 @@ body{
     background-color: var(--orange-color);
     color: #ffffff;
     border: none;
-    padding: 12px 32px;
+    padding: 1rem 2.5rem;
     display: block;
-    margin: 0 auto;
+    margin: 1rem auto;
     cursor: pointer;
 }
 
 .green-shoe{
-    max-width: 100%;
+    max-width: 50%;
     position: absolute;
-    bottom: -50;
+    bottom: -40px;
     right: 50%;
     transform: translate(50%,0);
 }
@@ -144,33 +146,33 @@ body{
 }
 
 .circle{
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     background-color: red;
     position: absolute;
 }
 
 .circle1{
-    top: 80%;
+    top: 90%;
     left: 15%;
-    background-color: rgba(30, 214, 85, 0.6);
+    background-color: rgba(30, 214, 85, 0.3);
 }
 
 .circle2,
 .circle3{
-    height: 50px;
-    width: 50px;
-    background-color: rgba(21, 237, 171, 0.6);;
+    height: 25px;
+    width: 25px;
+    background-color: rgba(21, 237, 171, 0.3);;
 }
 
 .circle2{
-    top: 75%;
+    top: 85%;
     left: 40%;
 }
 
 .circle3{
-    top: 18%;
+    top: 13%;
     left: 70%;
 }
 
@@ -221,7 +223,7 @@ body{
     text-align: center;
 }
 .video-area video{
-    max-width: 75%;
+    max-width: 100%;
     display: block;
     margin: 0 auto;
 }
@@ -233,8 +235,10 @@ body{
 }
 
 .footer .logo-img{
-    opacity: 0.3;
-    cursor: pointer;
+    opacity: 0.5;
+    filter: grayscale(50%);
+    max-width: 70px;
+    max-height: 70px;
 }
 
 .nav-bar-footer ul{
@@ -263,58 +267,65 @@ body{
     text-decoration: underline;
 }
 
-@media(max-width: 600px){
+@media(min-width: 600px){
     .header{
-        height: 170px;
-        flex-direction: column;
-        justify-content: center;
+        height: 100px;
+        flex-direction: row;
+        justify-content: space-between;
     }
     .logo-img{
         max-width: 80px;
         max-height: 80px;
     }
     .margin-top-fixed{
-        margin-top: 170px;
+        margin-top: 100px;
     }
-}
+    .nav-bar-header li{
+        margin-left: 2rem;
+    }
+    
+    .nav-bar-header a{
+        font-size: 1.3rem;
+    }
 
-
-@media(max-width: 768px){
-    .green-shoe{
-        max-width: 50%;
-        bottom: -30;
-        right: 50%;
-    }
-    .title,
-    .description{
-        padding: 1.5rem 1rem;
-    }
     .title{
-        font-size: 3.5rem;
+        font-size: 3.3rem;
     }
-    .description{
-        font-size: 1.8rem;
+
+    .sub-title{
+        font-size: 2.3rem;
     }
+
+    .description-text{
+        font-size: 1.9rem;
+    }
+
+    .p-text{
+        font-size: 1.3rem;
+    }
+
     .video-area video{
-        max-width: 100%;
+        max-width: 75%;
     }
+
     .circle1{
-        max-width: 75px;
-        max-height: 75px;
-        top: 83%;
+        width: 100px;
+        height: 100px;
+        top: 75%;
     }
     
     .circle2,
     .circle3{
-        max-width: 35px;
-        max-height: 35px;
+        width: 50px;
+        height: 50px;
     }
 
     .circle2{
-        top: 83%;
+        top: 75%;
     }
     
     .circle3{
-        top: 13%;
+        top: 10%;
     }
+    
 }
