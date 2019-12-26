@@ -28,7 +28,7 @@ body{
 .white-background{background-color: #fff}
 .light-blue-background{background-color: var(--light-blue-background)}
 .dark-blue-background{background-color: var(--link-color)}
-.green-background{background-color: var(--green-color);}
+.green-background{background-color: var(--green-color)}
 .dark-background{background-color: var(--color-footer)}
 
 .container,
@@ -49,6 +49,11 @@ body{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
+}
+
+.margin-top-fixed{
+    margin-top: 150px;
 }
 
 .header{
@@ -56,7 +61,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1;
 }
 
 .logo-img{
@@ -76,16 +80,16 @@ body{
     color: var(--link-color);
     transition: 0.5s;
     text-decoration-color: transparent;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .nav-bar-header a:hover{
-    color: #FF7000;
+    color: var(--orange-color);
     text-decoration: underline;
 }
 
 .banner-area{
-    margin-top: 150px;
+    position: relative;
 }
 
 .title,
@@ -108,4 +112,30 @@ body{
     padding: 12px 32px;
     display: block;
     margin: 0 auto;
+}
+
+.green-shoe{
+    max-width: 100%;
+    position: absolute;
+    bottom: -50;
+    right: 50%;
+    transform: translate(50%,0);
+}
+
+@media(max-width: 768px){
+    .green-shoe{
+        max-width: 50%;
+        bottom: -30;
+        right: 50%;
+    }
+    .title,
+    .description{
+        padding: 1.5rem 1rem;
+    }
+    .title{
+        font-size: 3.5rem;
+    }
+    .description{
+        font-size: 1.8rem;
+    }
 }
