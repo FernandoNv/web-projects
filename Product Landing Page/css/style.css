@@ -35,7 +35,7 @@ body{
 .header,
 .footer{
     /*Change to 1440px after finishing everthing*/
-    max-width: 1000px;
+    max-width: 1920px;
     padding: 1rem 2rem;
     margin: 0 auto;
 }
@@ -227,7 +227,7 @@ body{
     margin-bottom: 2rem;
     text-align: center;
 }
-.video-area video{
+#video{
     max-width: 100%;
     display: block;
     margin: 0 auto;
@@ -370,8 +370,8 @@ body{
         font-size: 1.3rem;
     }
 
-    .video-area video{
-        max-width: 75%;
+    #video{
+        
     }
 
     .circle1{

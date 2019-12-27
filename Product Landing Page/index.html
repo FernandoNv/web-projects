@@ -9,7 +9,7 @@
 <body>
     <div class="white-background position-fixed green-bottom-border">
         <header class="header" id="header">
-            <object data="./img/logo-green-shoe.svg" type="image/svg+xml" id="header-img" alt="Green Shoes Logo" class="logo-img"></object>
+            <img src="./img/logo-green-shoe.png" id="header-img" alt="Green Shoes Logo" class="logo-img">
             <nav class="nav-bar-header" id="nav-bar">
                 <ul>
                     <li><a href="#features" class="nav-link">Features</a></li>
@@ -41,7 +41,7 @@
         <div class="signup-area container display-flex">
             <h2 class="sub-title">Sign Up</h2>
             <form action="https://www.freecodecamp.com/email-submit" id="form">
-                <input type="email" id="email" placeholder="type your email" required class="input-email">
+                <input type="email" id="email" name="email" placeholder="type your email" required class="input-email">
                 <input type="submit" value="GET STARTED" id="submit" class="bt-primary">
             </form>
         </div>
@@ -51,11 +51,7 @@
             <h2 class="sub-title">Design</h2>
             <p class="p-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             <section class="video-area">
-                <video controls>
-                    <source src="video/green-shoes.mp4" type="video/mp4">
-                    Sorry, your browser doesn't support embedded videos.
-                </video>
-            </section>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BTa89IUatVg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>         
         </div>
     </div>
     <div class="white-background">
@@ -97,7 +93,7 @@
     </div>
     <div class="dark-background">
         <footer class="footer">
-            <object data="./img/logo-green-shoe.svg" type="image/svg+xml" id="header-img" alt="Green Shoes Logo" class="logo-img"></object>
+            <img src="./img/logo-green-shoe.png" id="header-img" alt="Green Shoes Logo" class="logo-img">
             <nav class="nav-bar-footer">
                 <ul>
                     <li><a href="#" class="nav-link">Features</a></li>
