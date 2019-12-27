@@ -35,13 +35,13 @@ body{
 .header,
 .footer{
     /*Change to 1440px after finishing everthing*/
-    max-width: 1000px;
+    max-width: 1200px;
     padding: 1rem 2rem;
     margin: 0 auto;
 }
 
 .container{
-    height: 100vh;
+    height: auto;
 }
 
 .position-fixed{
@@ -114,6 +114,11 @@ body{
 .description{
     font-size: 1.6rem;
 }
+
+.banner-area{
+    padding: 5rem 0;
+}
+
 .banner-area a{
     text-decoration: none;
 }
@@ -136,7 +141,7 @@ body{
 .green-shoe{
     max-width: 50%;
     position: absolute;
-    bottom: -50px;
+    bottom: -3.7rem;
     right: 50%;
     transform: translate(50%,0);
 }
@@ -207,6 +212,10 @@ body{
 .signup-area .sub-title{
     color:var(--text-dark-color);
     text-align: center;
+}
+
+.height-screen{
+    height: 100vh;
 }
 
 .input-email{
@@ -337,7 +346,7 @@ body{
     .header{
         height: 100px;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-between; 
     }
     .logo-img{
         max-width: 80px;
@@ -370,8 +379,9 @@ body{
         font-size: 1.3rem;
     }
 
-    #video{
-        
+    
+    .container{
+        height: 100vh;
     }
 
     .circle1{
@@ -393,7 +403,17 @@ body{
     .circle3{
         top: 10%;
     }
+
+    .banner-area{
+        padding: 0;
+    }
     
+}
+
+@media(max-width: 440px){
+    .green-shoe{
+        bottom: -2.4rem;
+    }
 }
 
 @media(min-width: 760px){
