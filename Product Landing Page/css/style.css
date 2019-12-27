@@ -35,7 +35,7 @@ body{
 .header,
 .footer{
     /*Change to 1440px after finishing everthing*/
-    max-width: 1920px;
+    max-width: 1000px;
     padding: 1rem 2rem;
     margin: 0 auto;
 }
@@ -136,7 +136,7 @@ body{
 .green-shoe{
     max-width: 50%;
     position: absolute;
-    bottom: -37px;
+    bottom: -50px;
     right: 50%;
     transform: translate(50%,0);
 }
