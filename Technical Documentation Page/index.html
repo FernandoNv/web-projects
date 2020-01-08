@@ -7,6 +7,190 @@
     <title>Technical Documentation Page</title>
 </head>
 <body>
+    <nav id="navbar">
+        <header class="title-page">JavaScript Documentation</header>
+        <i class="fas fa-bars"></i>
+        <ul class="menu">
+            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#What_you_should_already_know" class="nav-link">What you should already know</a></li>
+            <li><a href="#Getting_started" class="nav-link">Getting started</a></li>
+            <li><a href="#JavaScript_is_case-sensitive" class="nav-link">JavaScript is case-sensitive</a></li>
+            <li><a href="#Comments" class="nav-link">Comments</a></li>
+            <li><a href="#Variables" class="nav-link">Variables</a></li>
+            <li><a href="#Declaring_variables" class="nav-link">Declaring variables</a></li>
+            <li><a href="#Conditional_statements" class="nav-link">Conditional statements</a></li>
+            <li><a href="#Switch_statement" class="nav-link">Switch statement</a></li>
+            <li><a href="#Exception_handling_statements" class="nav-link">Exception handling statements</a></li>
+            <li><a href="#throw_statement" class="nav-link">throw statement</a></li>
+            <li><a href="#Defining_functions" class="nav-link">Defining functions</a></li>
+            <li><a href="#Reference" class="nav-link">Reference</a></li
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header class="main-header">Introduction</header>
+            <p class="paragraph">JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.</p>
+            <p class="paragraph">While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat.</p>
+            <p class="paragraph">JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.</p>
+        </section>
+        <section class="main-section" id="What_you_should_already_know">
+            <header class="main-header" >What you should already know</header>
+            <p class="paragraph">This guide assumes you have the following basic background:</p>
+            <ul class="section-list">
+                <li class="main-list-element">A general understanding of the Internet and the World Wide Web (WWW).</li>
+                <li class="main-list-element">Good working knowledge of HyperText Markup Language (HTML).</li>
+                <li class="main-list-element">Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Getting_started">
+            <header class="main-header">Getting started</header>
+            <p class="paragraph">Let’s write our first code in JavaScript.</p>
+            <h2 class="sub-title">Hello World</h2>
+            <p class="paragraph">To begin, you have to open the Web Console in your browser (Ctrl+Shift+I on Windows and Linux or Cmd-Option-K on Mac), open the Tools menu in Firefox, and select "Developer Web Console".</p>
+            <p class="paragraph">Then, writhe this:</p>
+            <code class="code-area">
+                console.log("Hello World");
+            </code>
+        </section>
+        <section class="main-section" id="JavaScript_is_case-sensitive">
+            <header class="main-header">JavaScript is case-sensitive</header>
+            <p class="paragraph">JavaScript is case-sensitive and uses the Unicode character set. For example, the word ideia could be used as a variable name.</p>
+            <code class="code-area">
+                let ideia = "play video-game";
+            </code>
+            <p class="paragraph">But, the variable ideia is not the same as Ideia because JavaScript is case sensitive.</p>
+            <p class="paragraph">In JavaScript, instructions are called statements and are separated by semicolons (;).</p>
+            <p class="paragraph">It is considered best practice, however, to always write a semicolon after a statement, even when it is not strictly needed. This practice reduces the chances of bugs getting into the code.</p>
+        </section>
+        <section class="main-section" id="Comments">
+            <header class="main-header">Comments</header>
+            <p class="paragraph">The syntax of comments is the same as in C++ and in many other languages:</p>
+            <code class="code-area">
+                // a one line comment
+                
+                /* this is a longer, 
+                * multi-line comment
+                */
+                
+                /* You can't, however, /* nest comments */ SyntaxError */
+            </code>
+            <p class="paragraph">Comments behave like whitespace, and are discarded during script execution.</p>
+        </section>
+        <section class="main-section" id="Variables">
+            <header class="main-header">Variables</header>
+            <p class="paragraph">JavaScript has three kinds of variable declarations.</p>
+            <ul class="section-list">
+                <li class="main-list-element"><b>var</b> - Declares a variable, optionally initializing it to a value.</li>
+                <li class="main-list-element"><b>let</b> - Declares a block-scoped, local variable, optionally initializing it to a value.</li>
+                <li class="main-list-element"><b>const</b> - Declares a block-scoped, read-only named constant.</li>
+            </ul>
+            <p class="paragraph">A JavaScript identifier (the names of variables) must start with a letter, underscore (_), or dollar sign ($). Subsequent characters can also be digits (0–9).</p>
+        </section>
+        <section class="main-section" id="Declaring_variables">
+            <header class="main-header">Declaring variables</header>
+            <p class="paragraph">You can declare a variable in two ways:</p>
+            <ul class="section-list">
+                <li class="main-list-element">
+                    With the keyword var. 
+                    <code class="code-area">
+                        var x = 42
+                    </code>
+                </li>
+                <p class="paragraph">This syntax can be used to declare both local and global variables, depending on the execution context.</p>
+                <li class="main-list-element">
+                    With the keyword const or let. 
+                    <code class="code-area">
+                        var x = 42
+                    </code>
+                </li>
+                <p class="paragraph">This syntax can be used to declare a block-scope local variable.</p>
+            </ul>
+            <p class="paragraph">A JavaScript identifier (the names of variables) must start with a letter, underscore (_), or dollar sign ($). Subsequent characters can also be digits (0–9).</p>
+        </section>
+        <section class="main-section" id="Conditional_statements">
+            <header class="main-header">Conditional statements</header>
+            <p class="paragraph">A conditional statement is a set of commands that executes if a specified condition is true. JS supports two conditional statements: if...else and switch.</p>
+            <h2 class="sub-title">if...else statement</h2>
+            <p class="paragraph">Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false.</p>
+            <p class="paragraph">An if statement looks like this:</p>
+            <code class="code-area">
+                if (condition) {
+                    statement_1;  
+                } else {
+                    statement_2;
+                }
+            </code>
+        </section>
+        <section class="main-section" id="Switch_statement">
+            <header class="main-header">Switch statement</header>
+            <p class="paragraph">A switch statement allows a program to evaluate an expression and attempt to match the expression's value to a case label. If a match is found, the program executes the associated statement.</p>
+            <p class="paragraph">A switch statement looks like this:</p>
+            <code class="code-area">
+                switch (expression) {
+                    case label_1:
+                      statements_1
+                      [break;]
+                    case label_2:
+                      statements_2
+                      [break;]
+                      ...
+                    default:
+                      statements_def
+                      [break;]
+                }
+            </code>
+        </section>
+        <section class="main-section" id="Exception_handling_statements">
+            <header class="main-header">Exception handling statements</header>
+            <p class="paragraph">You can throw exceptions using the throw statement and handle them using the try...catch statements.</p>
+            <ul class="section-list">
+                <li class="main-list-element">throw statement</li>
+                <li class="main-list-element">try...catch statement</li>
+            </ul>
+            <h2 class="sub-title">Exception types</h2>
+            <p class="paragraph">Just about any object can be thrown in JavaScript. While it is common to throw numbers or strings as errors, it is frequently more effective to use one of the exception types specifically created for this purpose:</p>
+            <ul class="section-list">
+                <li class="main-list-element">ECMAScript exceptions</li>
+                <li class="main-list-element">DOMException and DOMError</li>
+            </ul>
+        </section>
+        <section class="main-section" id="throw_statement">
+            <header class="main-header">throw statement</header>
+            <p class="paragraph">Use the throw statement to throw an exception. A throw statement specifies the value to be thrown:</p>
+            <code class="code-area">
+                throw expression;
+            </code>
+            <p class="paragraph">You may throw any expression, not just expressions of a specific type. The following code throws several exceptions of varying types:</p>
+            <code class="code-area">
+                throw 'Error2';   // String type
+                throw 42;         // Number type
+                throw true;       // Boolean type
+                throw {toString: function() { return "I'm an object!"; } };
+            </code>
+        </section>
+        <section class="main-section" id="Defining_functions">
+            <header class="main-header">Defining functions</header>
+            <p class="paragraph">A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:</p>
+            <ul class="section-list">
+                <li class="main-list-element">The name of the function.</li>
+                <li class="main-list-element">A list of parameters to the function, enclosed in parentheses and separated by commas.</li>
+                <li class="main-list-element">The JavaScript statements that define the function, enclosed in curly brackets, {...}.</li>
+            </ul>
+            <p class="paragraph">For example, the following code defines a simple function named square:</p>
+            <code class="code-area">
+                function square(number) {
+                    return number * number;
+                }
+            </code>
+        </section>
+        <section class="main-section" id="Reference">
+            <header class="main-header">Reference</header>
+            <p class="paragraph">All the documentation in this page is taken from <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN</a></p>
+        </section>
+    </main>
+    <footer class="footer">
+        Fernando©
+    </footer>
     <script src="./js/app.js"></script>
 </body>
 </html>
