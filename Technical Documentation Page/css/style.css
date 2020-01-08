@@ -3,6 +3,10 @@
 
 :root{
     --text-color: #615F4E;
+    --primary-color: #FAF52E;
+    --light-primary-color: #FCF964;
+    --dark-text-color: #403E34;
+    --light-text-color: #B1B0A0;
 }
 
 *{
@@ -13,4 +17,120 @@
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--text-color);
+}
+
+
+.footer,
+#main-doc,
+.title-page{
+    padding: 1em 2em;
+}
+
+.title-page{
+    background-color: var(--primary-color);
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+.header{
+    font-size: 2em;
+}
+
+.menu-icon{
+    cursor: pointer;
+    font-size: 24px;
+}
+.menu{
+    position: absolute;
+    top:  112px;
+    left: 0;
+    background-color: var(--text-color);
+    list-style: none;
+    display: none;
+}
+
+.menu li{
+    margin: 0 0 0.2em;
+}
+
+.menu li a{
+    box-sizing: border-box;
+    padding: 1em 2em;
+    color: var(--light-text-color);
+    background-color: var(--dark-text-color);
+    border-left: 0.2em solid var(--text-color);
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu li a:hover{
+    background-color: var(--light-text-color);
+    color: var(--dark-text-color);
+}
+
+.display-block{
+    display: block;
+}
+
+.main-section{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.main-header{
+    font-size: 1.5em;
+    margin: 1em 0;
+    width: fit-content;
+    padding: 0 0.2em;
+    font-weight: bold;
+    background-color: var(--text-color);
+    color: var(--light-primary-color);
+}
+
+.paragraph{
+    font-size: 1.1em;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    margin-bottom: 1em;
+}
+
+.section-list{
+    font-size: 1em;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    padding: 0 2em;
+}
+
+.main-list-element{
+    margin: 1em 0;
+}
+
+.sub-title{
+    font-size: 1.3em;
+    margin: 1em 0;
+    font-weight: bold;
+}
+
+.code-area{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2em;
+    display: inline-block;
+    background-color: var(--light-primary-color);
+    border-left: 0.3em solid var(--text-color);
+    font-size: 1.1em;
+    margin: 1em 0 1.5em;
+}
+
+.footer{
+    background-color: var(--dark-text-color);
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
