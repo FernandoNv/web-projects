@@ -28,18 +28,26 @@ body{
 
 .title-page{
     background-color: var(--primary-color);
+    min-height: 80px;
     display: flex;
-    height: 80px;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    flex-flow: column-reverse;
 }
 .header{
-    font-size: 2em;
+    font-size: 1.32em;
+    background-color: var(--dark-text-color);
+    color: var(--light-text-color);
+    padding: 0 0.2em;
+    margin: 0.5em 0;
+    text-align: center;
 }
 
 .menu-icon{
     cursor: pointer;
     font-size: 24px;
+    flex-shrink: 1;
 }
 .menu{
     position: absolute;
@@ -85,8 +93,8 @@ body{
 .main-header{
     font-size: 1.5em;
     margin: 1em 0;
-    width: fit-content;
     padding: 0 0.2em;
+    width: max-content;
     font-weight: bold;
     background-color: var(--text-color);
     color: var(--light-primary-color);
@@ -133,4 +141,51 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+@media screen and (min-width: 500px){
+    .title-page{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    body{
+        display: grid;
+        grid-template-areas: 
+        "navbar navbar navbar navbar navbar navbar navbar navbar main-content main-content"
+        ". . . . . . . . main-content main-content"
+        ". . . . . . . . footer footer";
+    }
+    #navbar{
+        grid-area: navbar;
+        background-color: var(--text-color);
+        height: 100vh;
+        overflow-y: auto;
+    }
+    #main-doc{
+        grid-area: main-content;
+    }
+
+    .footer{
+        grid-area: footer;
+    }
+
+    .menu-icon{
+        display: none;
+    }
+
+    .menu{
+        display: initial;
+        position: initial;
+        top: initial;
+        left: initial;
+    }
+
 }
