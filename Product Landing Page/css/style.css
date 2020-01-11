@@ -3,7 +3,6 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 :root{
@@ -36,7 +35,7 @@ body{
 .footer{
     /*Change to 1440px after finishing everthing*/
     max-width: 1200px;
-    padding: 1rem 2rem;
+    padding: 1em 2em;
     margin: 0 auto;
 }
 
@@ -57,15 +56,16 @@ body{
 }
 
 .margin-top-fixed{
-    margin-top: 170px;
+    margin-top: 80px;
 }
 
 .header{
-    height: 170px;
+    height: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .green-bottom-border{
@@ -73,10 +73,10 @@ body{
 }
 
 .logo-img{
-    max-width: 80px;
-    max-height: 80px;
-    padding: 0.5rem;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
+    margin: 0.2em 0;
 }
 
 .nav-bar-header ul{
@@ -85,14 +85,14 @@ body{
 
 .nav-bar-header li{
     display: inline;
-    padding: 0 0.2rem;
+    margin: 1em 0.2em;
 }
 
 .nav-bar-header a{
     color: var(--link-color);
     transition: 0.5s;
     text-decoration-color: transparent;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 .nav-bar-header a:hover{
@@ -103,20 +103,24 @@ body{
 
 .title,
 .description{
-    padding: 2rem 1rem;
+    padding: 1em;
     text-align: center;
 }
 
 .title{
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 2em;
+    font-weight: bold;
 }
 .description{
-    font-size: 1.6rem;
+    font-size: 1.5em;
+    font-weight: normal;
 }
 
 .banner-area{
-    padding: 5rem 0;
+    padding: 4em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .banner-area a{
@@ -127,9 +131,9 @@ body{
     background-color: var(--orange-color);
     color: #ffffff;
     border: none;
-    padding: 1rem 2.5rem;
+    padding: 1em 2.5em;
     display: block;
-    margin: 1rem auto;
+    margin: 2em auto;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -139,9 +143,9 @@ body{
 }
 
 .green-shoe{
-    max-width: 50%;
+    max-width: 60%;
     position: absolute;
-    bottom: -3.7rem;
+    bottom: 0;
     right: 50%;
     transform: translate(50%,0);
 }
@@ -153,7 +157,7 @@ body{
 }
 
 .features-area{
-    margin-top: 3rem;
+    /* background-color: red; */
 }
 
 .circle{
@@ -190,23 +194,23 @@ body{
 .sub-title,
 .description-text,
 .p-text{
-    padding: 1rem 0;
+    padding: 1em 0;
 }
 
 .sub-title{
-    font-size: 2rem;
+    font-size: 1.5em;
     color: var(--green-color);
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .description-text{
-    font-size: 1.7rem;
+    font-size: 1.25em;
     font-weight: normal;
 }
 
 .p-text{
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 1.1em;
+    font-weight: normal;
 }
 
 .signup-area .sub-title{
@@ -215,16 +219,16 @@ body{
 }
 
 .height-screen{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .input-email{
     width: 100%;
-    padding: 0.7rem 1rem;
-    font-size: 1.2rem;
+    padding: 0.7em 1em;
+    font-size: 1.2em;
     color: var(--light-gray-color);
     border: 1px solid var(--light-gray-color);
-    margin: 1rem 0 2rem 0;
+    margin: 2em 0;
 }
 
 .design-area .sub-title{
@@ -233,7 +237,7 @@ body{
 
 .design-area .p-text{
     color: var(--light-blue-color);
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
     text-align: center;
 }
 #video{
@@ -258,8 +262,8 @@ body{
 .card{
     max-width:768px;
     border: 1px solid var(--gray-color);
-    padding: 1rem 2rem;
-    margin-top: 1rem;
+    padding: 1em 2em;
+    margin-top: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -281,16 +285,16 @@ body{
 .title-card,
 .price-area,
 .card-list{
-    margin: 1rem 0;
+    margin: 1em 0;
 }
 
 .title-card{
-    font-size: 1.5rem;
+    font-size: 1.5em;
     text-align: center;
 }
 
 .price-area{
-    font-size: 2.5rem;
+    font-size: 2em;
 }
 
 .card-list{
@@ -307,34 +311,35 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
+    clear: both;
 }
 
 .footer .logo-img{
     opacity: 0.5;
     filter: grayscale(50%);
-    max-width: 70px;
-    max-height: 70px;
 }
 
 .nav-bar-footer ul{
     list-style: none;
+    margin-top: 0.5em;
 }
 
 .nav-bar-footer li{
     display: inline;
-    padding: 0 0.2rem;
+    padding: 0 0.2em;
 }
 
 .nav-bar-footer a{
     color: var(--text-color);
     transition: 0.5s;
     text-decoration-color: transparent;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 .copyright{
-    padding: 1rem;
-    font-size: 0.9rem;
+    padding: 0.8em;
+    font-size: 0.9em;
 }
 
 .nav-bar-footer a:hover{
@@ -344,7 +349,6 @@ body{
 
 @media(min-width: 600px){
     .header{
-        height: 100px;
         flex-direction: row;
         justify-content: space-between; 
     }
@@ -352,36 +356,33 @@ body{
         max-width: 80px;
         max-height: 80px;
     }
-    .margin-top-fixed{
-        margin-top: 100px;
-    }
     .nav-bar-header li{
-        margin-left: 2rem;
+        margin-left: 2em;
     }
     
     .nav-bar-header a{
-        font-size: 1.3rem;
+        font-size: 1.3em;
     }
 
     .title{
-        font-size: 3.3rem;
+        font-size: 3em;
     }
 
     .sub-title{
-        font-size: 2.3rem;
+        font-size: 2em;
     }
 
     .description-text{
-        font-size: 1.9rem;
+        font-size: 1.5em;
     }
 
     .p-text{
-        font-size: 1.3rem;
+        font-size: 1.3em;
     }
 
     
     .container{
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .circle1{
@@ -412,7 +413,7 @@ body{
 
 @media(max-width: 440px){
     .green-shoe{
-        bottom: -2.4rem;
+        bottom: -2.4em;
     }
 }
 
@@ -424,35 +425,47 @@ body{
 
 
 @media(min-width: 768px){
+    .green-shoe{
+        max-width: 30%;
+        bottom: -2.4em;
+    }
+
     .pricing-area{
         display: grid;
         grid-template-areas: 
-            ". header header ."
-            "card1 card2 card2 card3";
-        grid-column-gap: 3rem;
+            ". . header header header . ."
+            "card1 card1 card2 card2 card2 card3 card3";
         align-items: center;
         align-content: center;
-        justify-content: center;
-        height: 100vh;
-        width: 100%;
+        justify-content: space-evenly;
+        min-height: 100vh;
     }
 
     .pricing-area .sub-title{
         grid-area: header;
-        display: block;
         justify-self: center;
+        padding: 0;
+        margin: 0;
     }
+    
     .card1{
         grid-area: card1;
     }
 
     .card2{
         grid-area: card2;
-        transform: scale(1.1);
+        transform: scale(1.05);
+        
     }
 
     .card3{
         grid-area: card3;
     }
     
+}
+
+@media(min-height: 900px){
+    .green-shoe{
+        max-width: 60%;
+    }
 }
