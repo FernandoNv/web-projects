@@ -382,7 +382,11 @@ body{
 
     
     .container{
-        min-height: 75vh;
+        min-height: 100vh;
+    }
+
+    .banner-area{
+        min-height: 80vh;
     }
 
     .circle1{
