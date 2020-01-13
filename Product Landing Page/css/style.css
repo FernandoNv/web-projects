@@ -143,7 +143,7 @@ body{
 }
 
 .green-shoe{
-    max-width: 60%;
+    max-width: 45%;
     position: absolute;
     bottom: 0;
     right: 50%;
@@ -152,6 +152,7 @@ body{
 
 .display-flex{
     display: flex;
+    align-content: center;
     flex-direction: column;
     justify-content: center;
 }
@@ -224,6 +225,7 @@ body{
 
 .input-email{
     width: 100%;
+    box-sizing: border-box;
     padding: 0.7em 1em;
     font-size: 1.2em;
     color: var(--light-gray-color);
