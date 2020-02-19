@@ -49,18 +49,24 @@ body{
 }
 
 .header .container{
-    height: 80px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.header{
-    background-color: rgba(18, 17, 58, 0.5);
+
+#navbar{
+    background-color: rgba(18, 17, 58, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .header .logo-top{
-    height: 100%;
+    height: 85%;
 }
 
 .menu ul{
@@ -88,11 +94,12 @@ body{
 }
 
 /*Welcome area*/
-.welcome-section{
+#welcome-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: calc(100vh - 80px);
+    height: 100vh;
+    
 }
 
 .title{
@@ -150,7 +157,7 @@ body{
 }
 
 /*Projects area*/
-.projects{
+#projects{
     display: grid;
     min-height: 100vh;
     grid-template-areas: 
@@ -159,7 +166,7 @@ body{
     "image3 image3 image4 image4";
 }
 
-.projects .title-section{
+#projects .title-section{
     grid-area: title;
     text-align: center;
     color: var(--green-color);
@@ -228,7 +235,7 @@ body{
     opacity: 1;
 }
 
-.project-title{
+.project-tile{
     font-size: 1.3rem;
     color: var(--green-color);
 }
@@ -324,7 +331,7 @@ body{
         justify-content: center;
         text-align: center;
     }
-    .projects{
+    #projects{
         display: flex;
         flex-direction: column;
         min-height: 100vh;
